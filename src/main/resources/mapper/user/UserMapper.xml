@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="data.dao.user.UserDao">
+<!-- 유저 정보 출력 -->
+    <select id="selectUser" parameterType="int" resultType="User">
+        SELECT * FROM USER WHERE usernum = #{usernum}
+    </select>
