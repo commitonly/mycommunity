@@ -2,6 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="data.dao.user.UserDao">
 <!-- 유저 정보 출력 -->
-    <select id="selectUser" parameterType="int" resultType="User">
+    <select id="selectUser" parameterType="int" resultType="UserDto">
         SELECT * FROM USER WHERE usernum = #{usernum}
     </select>
+
+</mapper>
